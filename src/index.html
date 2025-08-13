@@ -1,0 +1,405 @@
+<section id="contact" class="section section-alt">
+        <div class="container">
+            <h2 id="contact-title">Get In Touch</h2>
+            <form class="contact-form" onsubmit="handleSubmit(event)">
+                <div class="form-group">
+                    <label for="name" data-en="Name" data-nl="Naam">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="title" data-en="Title" data-nl="Functie">Title</label>
+                    <input type="text" id="title" name="title" data-en="e.g., CIO, IT Director" data-nl="bijv., CIO, IT Directeur" placeholder="e.g., CIO, IT Director">
+                </div>
+                
+                <div class="form-group">
+                    <label for="organization" data-en="Municipality/Organization" data-nl="Gemeente/Organisatie">Municipality/Organization</label>
+                    <input type="text" id="organization" name="organization" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email" data-en="Email" data-nl="E-mail">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone" data-en="Phone" data-nl="Telefoon">Phone</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                
+                <div class="form-group">
+                    <label for="project-type" data-en="Project Type" data-nl="Project Type">Project Type</label>
+                    <select id="project-type" name="project-type" required>
+                        <option value="" data-en="Select a service" data-nl="Selecteer een dienst">Select a service</option>
+                        <option value="podiumd-architecture" data-en="PodiumD Suite Implementation" data-nl="PodiumD Suite Implementatie">PodiumD Suite Implementation</option>
+                        <option value="api-standards" data-en="API Standards & Zaakgericht Werken" data-nl="API Standaarden & Zaakgericht Werken">API Standards & Zaakgericht Werken</option>
+                        <option value="nora-gemma" data-en="NORA/GEMMA Compliance Assessment" data-nl="NORA/GEMMA Compliance Beoordeling">NORA/GEMMA Compliance Assessment</option>
+                        <option value="open-source" data-en="Open Source Solution Strategy" data-nl="Open Source Oplossingen Strategie">Open Source Solution Strategy</option>
+                        <option value="data-platform" data-en="Customer Data Platform (CDP)" data-nl="Customer Data Platform (CDP)">Customer Data Platform (CDP)</option>
+                        <option value="ai-nlp" data-en="AI/NLP Integration" data-nl="AI/NLP Integratie">AI/NLP Integration</option>
+                        <option value="other" data-en="Other - Please specify in message" data-nl="Anders - Specificeer in bericht">Other - Please specify in message</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message" data-en="Project Details" data-nl="Project Details">Project Details</label>
+                    <textarea id="message" name="message" data-en="Please describe your project requirements, timeline, and any specific challenges you're facing..." data-nl="Beschrijf uw projectvereisten, tijdlijn en eventuele specifieke uitdagingen..." placeholder="Please describe your project requirements, timeline, and any specific challenges you're facing..." required></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn" data-en="Send Message" data-nl="Verstuur Bericht">Send Message</button>
+            </form>
+        </div>
+    </section><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Municipal Enterprise Architecture Consultant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">Ugo Software</div>
+            <div class="nav-right">
+                <ul class="nav-links">
+                    <li><a href="#home" data-en="Home" data-nl="Home">Home</a></li>
+                    <li><a href="#services" data-en="Services" data-nl="Diensten">Services</a></li>
+                    <li><a href="#about" data-en="About" data-nl="Over">About</a></li>
+                    <li><a href="#experience" data-en="Experience" data-nl="Ervaring">Experience</a></li>
+                    <li><a href="#contact" data-en="Contact" data-nl="Contact">Contact</a></li>
+                </ul>
+                <div class="language-switch">
+                    <button class="lang-btn active" onclick="switchLanguage('en')" id="en-btn">EN</button>
+                    <button class="lang-btn" onclick="switchLanguage('nl')" id="nl-btn">NL</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 data-en="<span class='highlight'>Dutch Municipal</span> Architecture Solutions" data-nl="<span class='highlight'>Nederlandse Gemeentelijke</span> Architectuur Oplossingen"><span class="highlight">Dutch Municipal</span> Architecture Solutions</h1>
+                <p data-en="Transforming local government through strategic enterprise architecture, API-first cloud-native solutions, and Dutch government standards (NORA, GEMMA)" data-nl="Transformatie van lokale overheden door strategische enterprise architectuur, API-first cloud-native oplossingen, en Nederlandse overheidsstandaarden (NORA, GEMMA)">Transforming local government through strategic enterprise architecture, API-first cloud-native solutions, and Dutch government standards (NORA, GEMMA)</p>
+                <a href="#contact" class="cta-button" data-en="Start Your Digital Transformation" data-nl="Start Uw Digitale Transformatie">Start Your Digital Transformation</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section">
+        <div class="container">
+            <h2 id="services-title">Specialized Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🏛️</div>
+                    <h3 data-en="Dutch Municipal Standards" data-nl="Nederlandse Gemeentelijke Standaarden">Dutch Municipal Standards</h3>
+                    <p data-en="Expert implementation of NORA, GEMMA frameworks and Dutch government interoperability standards for seamless municipal operations." data-nl="Expertimplementatie van NORA, GEMMA-kaders en Nederlandse overheids-interoperabiliteitsstandaarden voor naadloze gemeentelijke operaties.">Expert implementation of NORA, GEMMA frameworks and Dutch government interoperability standards for seamless municipal operations.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔗</div>
+                    <h3 data-en="API-First Architecture" data-nl="API-First Architectuur">API-First Architecture</h3>
+                    <p data-en="OpenAPI/OAS-based solution designs for zaakgericht werken (case-oriented working) and modern citizen services integration." data-nl="OpenAPI/OAS-gebaseerde oplossingsontwerpen voor zaakgericht werken en moderne burgerserviceintegratie.">OpenAPI/OAS-based solution designs for zaakgericht werken (case-oriented working) and modern citizen services integration.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📊</div>
+                    <h3 data-en="Open Source Solutions" data-nl="Open Source Oplossingen">Open Source Solutions</h3>
+                    <p data-en="PodiumD suite expertise and open-source municipal software solutions that reduce vendor lock-in and increase flexibility." data-nl="PodiumD suite expertise en open-source gemeentelijke softwareoplossingen die vendor lock-in verminderen en flexibiliteit vergroten.">PodiumD suite expertise and open-source municipal software solutions that reduce vendor lock-in and increase flexibility.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🤖</div>
+                    <h3 data-en="AI & NLP Integration" data-nl="AI & NLP Integratie">AI & NLP Integration</h3>
+                    <p data-en="Advanced natural language processing solutions for citizen communication, document processing, and automated service delivery." data-nl="Geavanceerde natuurlijke taalverwerkingsoplossingen voor burgercommunicatie, documentverwerking en geautomatiseerde dienstverlening.">Advanced natural language processing solutions for citizen communication, document processing, and automated service delivery.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">☁️</div>
+                    <h3 data-en="Cloud-Native Architecture" data-nl="Cloud-Native Architectuur">Cloud-Native Architecture</h3>
+                    <p data-en="Kubernetes-based, CI/CD-enabled solutions designed for scalability, security, and compliance with Dutch privacy regulations." data-nl="Kubernetes-gebaseerde, CI/CD-enabled oplossingen ontworpen voor schaalbaarheid, beveiliging en naleving van Nederlandse privacyregels.">Kubernetes-based, CI/CD-enabled solutions designed for scalability, security, and compliance with Dutch privacy regulations.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔐</div>
+                    <h3 data-en="Data Platform Strategy" data-nl="Data Platform Strategie">Data Platform Strategy</h3>
+                    <p data-en="Customer Data Platform (CDP) architecture and data warehousing solutions for unified citizen data management." data-nl="Customer Data Platform (CDP) architectuur en datawarehousing-oplossingen voor geïntegreerd burgergegevensbeheer.">Customer Data Platform (CDP) architecture and data warehousing solutions for unified citizen data management.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section section-alt">
+        <div class="container">
+            <h2 id="about-title">About</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3 data-en="Dutch Government Architecture Expertise" data-nl="Nederlandse Overheidsarchitectuur Expertise">Dutch Government Architecture Expertise</h3>
+                    <p data-en="With over 20 years of experience in enterprise architecture and a deep specialization in Dutch municipal government systems, I help local governments navigate complex technology transformations while ensuring compliance with national standards." data-nl="Met meer dan 20 jaar ervaring in enterprise architectuur en een diepe specialisatie in Nederlandse gemeentelijke overheidssystemen, help ik lokale overheden bij het navigeren van complexe technologietransformaties terwijl ik naleving van nationale standaarden waarborg.">With over 20 years of experience in enterprise architecture and a deep specialization in Dutch municipal government systems, I help local governments navigate complex technology transformations while ensuring compliance with national standards.</p>
+                    
+                    <p data-en="As Business Architect at Dimpact and former researcher at the Telematica Instituut (now Novay), I've been instrumental in developing and implementing the architectural foundations that power modern Dutch municipal services, including contributions to ArchiMate and zaakgericht werken standards." data-nl="Als Business Architect bij Dimpact en voormalig onderzoeker bij het Telematica Instituut (nu Novay), ben ik instrumentaal geweest in het ontwikkelen en implementeren van de architectuurfunderingen die moderne Nederlandse gemeentelijke diensten aandrijven, inclusief bijdragen aan ArchiMate en zaakgericht werken standaarden.">As Business Architect at Dimpact and former researcher at the Telematica Instituut (now Novay), I've been instrumental in developing and implementing the architectural foundations that power modern Dutch municipal services, including contributions to ArchiMate and zaakgericht werken standards.</p>
+                    
+                    <div class="credentials">
+                        <h4 data-en="Expertise & Frameworks" data-nl="Expertise & Raamwerken">Expertise & Frameworks</h4>
+                        <ul>
+                            <li data-en="✓ NORA, GEMMA - Dutch Government Reference Architectures" data-nl="✓ NORA, GEMMA - Nederlandse Overheid Referentie Architecturen">✓ NORA, GEMMA - Dutch Government Reference Architectures</li>
+                            <li data-en="✓ ArchiMate - Co-developer of the international standard" data-nl="✓ ArchiMate - Mede-ontwikkelaar van de internationale standaard">✓ ArchiMate - Co-developer of the international standard</li>
+                            <li data-en="✓ TOGAF Certified Enterprise Architect" data-nl="✓ TOGAF Gecertificeerd Enterprise Architect">✓ TOGAF Certified Enterprise Architect</li>
+                            <li data-en="✓ OpenAPI/OAS, BPMN, CMMN" data-nl="✓ OpenAPI/OAS, BPMN, CMMN">✓ OpenAPI/OAS, BPMN, CMMN</li>
+                            <li data-en="✓ PodiumD Suite Solution Architect" data-nl="✓ PodiumD Suite Solution Architect">✓ PodiumD Suite Solution Architect</li>
+                            <li data-en="✓ Scrum Product Owner & Master" data-nl="✓ Scrum Product Owner & Master">✓ Scrum Product Owner & Master</li>
+                            <li data-en="✓ Natural Language Processing & AI Integration" data-nl="✓ Natuurlijke Taalverwerking & AI Integratie">✓ Natural Language Processing & AI Integration</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div style="background: linear-gradient(45deg, #3498db, #2c3e50); height: 400px; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: white; font-size: 4rem;">🏛️</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 id="experience-title">Recent Projects</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3 data-en="PodiumD Solution Architecture - Dimpact" data-nl="PodiumD Solution Architectuur - Dimpact">PodiumD Solution Architecture - Dimpact</h3>
+                        <p data-en="<strong>2024-Present:</strong> Leading solution architecture for PodiumD open-source municipal service suite. Product Owner for data layer APIs and registers, including CI/CD implementation and environment design." data-nl="<strong>2024-Heden:</strong> Leiding over solution architectuur voor PodiumD open-source gemeentelijke dienstverlening suite. Product Owner voor data layer API's en registers, inclusief CI/CD implementatie en omgevingsontwerp."><strong>2024-Present:</strong> Leading solution architecture for PodiumD open-source municipal service suite. Product Owner for data layer APIs and registers, including CI/CD implementation and environment design.</p>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3 data-en="Customer Data Platform Advisory - Univé" data-nl="Customer Data Platform Advies - Univé">Customer Data Platform Advisory - Univé</h3>
+                        <p data-en="<strong>2024:</strong> Provided strategic advice on CDP acquisition with focus on data warehousing and application landscape integration, optimizing data architecture for insurance operations." data-nl="<strong>2024:</strong> Strategisch advies gegeven over CDP acquisitie met focus op datawarehousing en applicatielandschap integratie, optimalisatie van data-architectuur voor verzekeringsoperaties."><strong>2024:</strong> Provided strategic advice on CDP acquisition with focus on data warehousing and application landscape integration, optimizing data architecture for insurance operations.</p>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3 data-en="API Standards for Case-Oriented Working - VNG Realisatie" data-nl="API Standaarden voor Zaakgericht Werken - VNG Realisatie">API Standards for Case-Oriented Working - VNG Realisatie</h3>
+                        <p data-en="<strong>2018-2020:</strong> Product Owner for development of national API standards for zaakgericht werken, establishing the foundation for interoperable municipal case management across the Netherlands." data-nl="<strong>2018-2020:</strong> Product Owner voor ontwikkeling van nationale API standaarden voor zaakgericht werken, het leggen van de basis voor interoperabel gemeentelijk zaakbeheer door heel Nederland."><strong>2018-2020:</strong> Product Owner for development of national API standards for zaakgericht werken, establishing the foundation for interoperable municipal case management across the Netherlands.</p>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3 data-en="Dimpact Architecture Council Leadership" data-nl="Dimpact Architectuurraad Leiderschap">Dimpact Architecture Council Leadership</h3>
+                        <p data-en="<strong>2011-Present:</strong> Business Architect organizing architecture governance, product portfolio architecture, and European procurement processes for 100+ Dutch municipalities." data-nl="<strong>2011-Heden:</strong> Business Architect organiserend architectuur governance, productportfolio architectuur, en Europese aanbestedingsprocessen voor 100+ Nederlandse gemeenten."><strong>2011-Present:</strong> Business Architect organizing architecture governance, product portfolio architecture, and European procurement processes for 100+ Dutch municipalities.</p>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section section-alt">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <form class="contact-form" onsubmit="handleSubmit(event)">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <input type="text" id="title" name="title" placeholder="e.g., CIO, IT Director">
+                </div>
+                
+                <div class="form-group">
+                    <label for="organization">Municipality/Organization</label>
+                    <input type="text" id="organization" name="organization" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                
+                <div class="form-group">
+                    <label for="project-type">Project Type</label>
+                    <select id="project-type" name="project-type" required>
+                        <option value="">Select a service</option>
+                        <option value="podiumd-architecture">PodiumD Suite Implementation</option>
+                        <option value="api-standards">API Standards & Zaakgericht Werken</option>
+                        <option value="nora-gemma">NORA/GEMMA Compliance Assessment</option>
+                        <option value="open-source">Open Source Solution Strategy</option>
+                        <option value="data-platform">Customer Data Platform (CDP)</option>
+                        <option value="ai-nlp">AI/NLP Integration</option>
+                        <option value="other">Other - Please specify in message</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Project Details</label>
+                    <textarea id="message" name="message" placeholder="Please describe your project requirements, timeline, and any specific challenges you're facing..." required></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 data-en="Contact Information" data-nl="Contactinformatie">Contact Information</h3>
+                    <p>📧 info@ugosoftware.nl</p>
+                    <p data-en="📱 Available for consultation" data-nl="📱 Beschikbaar voor consultatie">📱 Available for consultation</p>
+                    <p data-en="📍 Based in Enschede, Netherlands" data-nl="📍 Gevestigd in Enschede, Nederland">📍 Based in Enschede, Netherlands</p>
+                    <p data-en="🌍 Serving Dutch municipalities nationwide" data-nl="🌍 Dienstverlening aan Nederlandse gemeenten landelijk">🌍 Serving Dutch municipalities nationwide</p>
+                </div>
+                <div class="footer-section">
+                    <h3 data-en="Open Source Contributions" data-nl="Open Source Bijdragen">Open Source Contributions</h3>
+                    <p><a href="https://github.com/NaturalNode/natural" data-en="Natural - NLP Library (Maintainer)" data-nl="Natural - NLP Bibliotheek (Maintainer)">Natural - NLP Library (Maintainer)</a></p>
+                    <p><a href="#" data-en="MedMij Implementation Components" data-nl="MedMij Implementatie Componenten">MedMij Implementation Components</a></p>
+                    <p><a href="#" data-en="PABC: PodiumD Authorization API" data-nl="PABC: PodiumD Autorisatie API">PABC: PodiumD Authorization API</a></p>
+                    <p><a href="#" data-en="ArchiMate Standard (Co-developer)" data-nl="ArchiMate Standaard (Mede-ontwikkelaar)">ArchiMate Standard (Co-developer)</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3 data-en="Professional Network" data-nl="Professioneel Netwerk">Professional Network</h3>
+                    <p data-en="• Dimpact (Dutch Municipal Cooperation)" data-nl="• Dimpact (Nederlandse Gemeentelijke Samenwerking)">• Dimpact (Dutch Municipal Cooperation)</p>
+                    <p data-en="• VNG Realisatie (Association of Netherlands Municipalities)" data-nl="• VNG Realisatie (Vereniging van Nederlandse Gemeenten)">• VNG Realisatie (Association of Netherlands Municipalities)</p>
+                    <p data-en="• OpenZaak Coalition" data-nl="• OpenZaak Coalitie">• OpenZaak Coalition</p>
+                    <p data-en="• The Open Group (ArchiMate Forum)" data-nl="• The Open Group (ArchiMate Forum)">• The Open Group (ArchiMate Forum)</p>
+                </div>
+            </div>
+            <p data-en="&copy; 2024 Ugo Software. All rights reserved. | Specializing in Dutch Municipal Architecture Solutions" data-nl="&copy; 2024 Ugo Software. Alle rechten voorbehouden. | Gespecialiseerd in Nederlandse Gemeentelijke Architectuur Oplossingen">&copy; 2024 Ugo Software. All rights reserved. | Specializing in Dutch Municipal Architecture Solutions</p>
+        </div>
+    </footer>
+
+    <script>
+        // Language switching functionality
+        let currentLanguage = 'en';
+        
+        const translations = {
+            en: {
+                'services-title': 'Specialized Services',
+                'about-title': 'About',
+                'experience-title': 'Recent Projects',
+                'contact-title': 'Get In Touch',
+                'form-success': 'Thank you for your inquiry! I will respond within 24 hours to discuss your municipal technology project.',
+                'dutch-municipal': 'Dutch Municipal',
+                'nederlandse-gemeentelijke': 'Nederlandse Gemeentelijke'
+            },
+            nl: {
+                'services-title': 'Gespecialiseerde Diensten',
+                'about-title': 'Over Mij',
+                'experience-title': 'Recente Projecten',
+                'contact-title': 'Neem Contact Op',
+                'form-success': 'Bedankt voor uw aanvraag! Ik zal binnen 24 uur reageren om uw gemeentelijke technologie project te bespreken.',
+                'dutch-municipal': 'Nederlandse Gemeentelijke',
+                'nederlandse-gemeentelijke': 'Nederlandse Gemeentelijke'
+            }
+        };
+
+        function switchLanguage(lang) {
+            currentLanguage = lang;
+            
+            // Update active button
+            document.getElementById('en-btn').classList.toggle('active', lang === 'en');
+            document.getElementById('nl-btn').classList.toggle('active', lang === 'nl');
+            
+            // Update all elements with data attributes
+            document.querySelectorAll('[data-en][data-nl]').forEach(element => {
+                const content = lang === 'en' ? element.getAttribute('data-en') : element.getAttribute('data-nl');
+                if (element.tagName === 'INPUT' && element.type !== 'email' && element.type !== 'tel') {
+                    element.placeholder = content;
+                } else if (element.tagName === 'TEXTAREA') {
+                    element.placeholder = content;
+                } else if (element.tagName === 'OPTION') {
+                    element.textContent = content;
+                } else {
+                    element.innerHTML = content;
+                }
+            });
+            
+            // Update section titles
+            Object.keys(translations[lang]).forEach(key => {
+                const element = document.getElementById(key);
+                if (element) {
+                    element.textContent = translations[lang][key];
+                }
+            });
+            
+            // Update hero title highlight
+            const heroTitle = document.querySelector('.hero-content h1');
+            if (heroTitle) {
+                const highlightClass = lang === 'en' ? 'Dutch Municipal' : 'Nederlandse Gemeentelijke';
+                heroTitle.innerHTML = `<span class="highlight">${highlightClass}</span> ${lang === 'en' ? 'Architecture Solutions' : 'Architectuur Oplossingen'}`;
+            }
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Form submission handler
+        function handleSubmit(event) {
+            event.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(event.target);
+            const data = Object.fromEntries(formData);
+            
+            // Show success message in current language
+            const message = translations[currentLanguage]['form-success'];
+            alert(message);
+            
+            // Reset form
+            event.target.reset();
+        }
+
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(44, 62, 80, 0.95)';
+            } else {
+                header.style.background = 'linear-gradient(135deg, #2c3e50 0%, #34495e 100%)';
+            }
+        });
+
+        // Animate timeline items on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all timeline items and service cards
+        document.querySelectorAll('.timeline-item, .service-card').forEach(item => {
+            item.style.opacity = '0';
+            item.style.transform = 'translateY(20px)';
+            item.style.transition = 'all 0.6s ease';
+            observer.observe(item);
+        });
+    </script>
+</body>
+</html>
