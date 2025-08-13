@@ -1,55 +1,4 @@
-<section id="contact" class="section section-alt">
-        <div class="container">
-            <h2 id="contact-title">Get In Touch</h2>
-            <form class="contact-form" onsubmit="handleSubmit(event)">
-                <div class="form-group">
-                    <label for="name" data-en="Name" data-nl="Naam">Name</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="title" data-en="Title" data-nl="Functie">Title</label>
-                    <input type="text" id="title" name="title" data-en="e.g., CIO, IT Director" data-nl="bijv., CIO, IT Directeur" placeholder="e.g., CIO, IT Director">
-                </div>
-                
-                <div class="form-group">
-                    <label for="organization" data-en="Municipality/Organization" data-nl="Gemeente/Organisatie">Municipality/Organization</label>
-                    <input type="text" id="organization" name="organization" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="email" data-en="Email" data-nl="E-mail">Email</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="phone" data-en="Phone" data-nl="Telefoon">Phone</label>
-                    <input type="tel" id="phone" name="phone">
-                </div>
-                
-                <div class="form-group">
-                    <label for="project-type" data-en="Project Type" data-nl="Project Type">Project Type</label>
-                    <select id="project-type" name="project-type" required>
-                        <option value="" data-en="Select a service" data-nl="Selecteer een dienst">Select a service</option>
-                        <option value="podiumd-architecture" data-en="PodiumD Suite Implementation" data-nl="PodiumD Suite Implementatie">PodiumD Suite Implementation</option>
-                        <option value="api-standards" data-en="API Standards & Zaakgericht Werken" data-nl="API Standaarden & Zaakgericht Werken">API Standards & Zaakgericht Werken</option>
-                        <option value="nora-gemma" data-en="NORA/GEMMA Compliance Assessment" data-nl="NORA/GEMMA Compliance Beoordeling">NORA/GEMMA Compliance Assessment</option>
-                        <option value="open-source" data-en="Open Source Solution Strategy" data-nl="Open Source Oplossingen Strategie">Open Source Solution Strategy</option>
-                        <option value="data-platform" data-en="Customer Data Platform (CDP)" data-nl="Customer Data Platform (CDP)">Customer Data Platform (CDP)</option>
-                        <option value="ai-nlp" data-en="AI/NLP Integration" data-nl="AI/NLP Integratie">AI/NLP Integration</option>
-                        <option value="other" data-en="Other - Please specify in message" data-nl="Anders - Specificeer in bericht">Other - Please specify in message</option>
-                    </select>
-                </div>
-                
-                <div class="form-group">
-                    <label for="message" data-en="Project Details" data-nl="Project Details">Project Details</label>
-                    <textarea id="message" name="message" data-en="Please describe your project requirements, timeline, and any specific challenges you're facing..." data-nl="Beschrijf uw projectvereisten, tijdlijn en eventuele specifieke uitdagingen..." placeholder="Please describe your project requirements, timeline, and any specific challenges you're facing..." required></textarea>
-                </div>
-                
-                <button type="submit" class="submit-btn" data-en="Send Message" data-nl="Verstuur Bericht">Send Message</button>
-            </form>
-        </div>
-    </section><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -60,7 +9,7 @@
 <body>
     <header>
         <nav class="container">
-            <div class="logo">Ugo Software</div>
+            <div class="logo">Ugo Enterprise Architecture</div>
             <div class="nav-right">
                 <ul class="nav-links">
                     <li><a href="#home" data-en="Home" data-nl="Home">Home</a></li>
@@ -177,7 +126,7 @@
                 
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <h3 data-en="API Standards for Case-Oriented Working - VNG Realisatie" data-nl="API Standaarden voor Zaakgericht Werken - VNG Realisatie">API Standards for Case-Oriented Working - VNG Realisatie</h3>
+                        <h3 data-en="API's voor Zaakgericht Werken - VNG Realisatie" data-nl="API's voor Zaakgericht Werken - VNG Realisatie">API's voor Zaakgericht Werken - VNG Realisatie</h3>
                         <p data-en="<strong>2018-2020:</strong> Product Owner for development of national API standards for zaakgericht werken, establishing the foundation for interoperable municipal case management across the Netherlands." data-nl="<strong>2018-2020:</strong> Product Owner voor ontwikkeling van nationale API standaarden voor zaakgericht werken, het leggen van de basis voor interoperabel gemeentelijk zaakbeheer door heel Nederland."><strong>2018-2020:</strong> Product Owner for development of national API standards for zaakgericht werken, establishing the foundation for interoperable municipal case management across the Netherlands.</p>
                     </div>
                     <div class="timeline-dot"></div>
@@ -185,7 +134,7 @@
                 
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <h3 data-en="Dimpact Architecture Council Leadership" data-nl="Dimpact Architectuurraad Leiderschap">Dimpact Architecture Council Leadership</h3>
+                        <h3 data-en="Dimpact Architecture Council Leadership" data-nl="Dimpact Architectuurraad">Dimpact Architecture Council Leadership</h3>
                         <p data-en="<strong>2011-Present:</strong> Business Architect organizing architecture governance, product portfolio architecture, and European procurement processes for 100+ Dutch municipalities." data-nl="<strong>2011-Heden:</strong> Business Architect organiserend architectuur governance, productportfolio architectuur, en Europese aanbestedingsprocessen voor 100+ Nederlandse gemeenten."><strong>2011-Present:</strong> Business Architect organizing architecture governance, product portfolio architecture, and European procurement processes for 100+ Dutch municipalities.</p>
                     </div>
                     <div class="timeline-dot"></div>
@@ -194,55 +143,55 @@
         </div>
     </section>
 
-    <section id="contact" class="section section-alt">
+        <section id="contact" class="section section-alt">
         <div class="container">
-            <h2>Get In Touch</h2>
+            <h2 id="contact-title">Get In Touch</h2>
             <form class="contact-form" onsubmit="handleSubmit(event)">
                 <div class="form-group">
-                    <label for="name">Name</label>
+                    <label for="name" data-en="Name" data-nl="Naam">Name</label>
                     <input type="text" id="name" name="name" required>
                 </div>
                 
                 <div class="form-group">
-                    <label for="title">Title</label>
-                    <input type="text" id="title" name="title" placeholder="e.g., CIO, IT Director">
+                    <label for="title" data-en="Title" data-nl="Functie">Title</label>
+                    <input type="text" id="title" name="title" data-en="e.g., CIO, IT Director" data-nl="bijv., CIO, IT Directeur" placeholder="e.g., CIO, IT Director">
                 </div>
                 
                 <div class="form-group">
-                    <label for="organization">Municipality/Organization</label>
+                    <label for="organization" data-en="Municipality/Organization" data-nl="Gemeente/Organisatie">Municipality/Organization</label>
                     <input type="text" id="organization" name="organization" required>
                 </div>
                 
                 <div class="form-group">
-                    <label for="email">Email</label>
+                    <label for="email" data-en="Email" data-nl="E-mail">Email</label>
                     <input type="email" id="email" name="email" required>
                 </div>
                 
                 <div class="form-group">
-                    <label for="phone">Phone</label>
+                    <label for="phone" data-en="Phone" data-nl="Telefoon">Phone</label>
                     <input type="tel" id="phone" name="phone">
                 </div>
                 
                 <div class="form-group">
-                    <label for="project-type">Project Type</label>
+                    <label for="project-type" data-en="Project Type" data-nl="Project Type">Project Type</label>
                     <select id="project-type" name="project-type" required>
-                        <option value="">Select a service</option>
-                        <option value="podiumd-architecture">PodiumD Suite Implementation</option>
-                        <option value="api-standards">API Standards & Zaakgericht Werken</option>
-                        <option value="nora-gemma">NORA/GEMMA Compliance Assessment</option>
-                        <option value="open-source">Open Source Solution Strategy</option>
-                        <option value="data-platform">Customer Data Platform (CDP)</option>
-                        <option value="ai-nlp">AI/NLP Integration</option>
-                        <option value="other">Other - Please specify in message</option>
+                        <option value="" data-en="Select a service" data-nl="Selecteer een dienst">Select a service</option>
+                        <option value="podiumd-architecture" data-en="PodiumD Suite Implementation" data-nl="PodiumD Suite Implementatie">PodiumD Suite Implementation</option>
+                        <option value="api-standards" data-en="API Standards & Zaakgericht Werken" data-nl="API Standaarden & Zaakgericht Werken">API Standards & Zaakgericht Werken</option>
+                        <option value="nora-gemma" data-en="NORA/GEMMA Compliance Assessment" data-nl="NORA/GEMMA Compliance Beoordeling">NORA/GEMMA Compliance Assessment</option>
+                        <option value="open-source" data-en="Open Source Solution Strategy" data-nl="Open Source Oplossingen Strategie">Open Source Solution Strategy</option>
+                        <option value="data-platform" data-en="Customer Data Platform (CDP)" data-nl="Customer Data Platform (CDP)">Customer Data Platform (CDP)</option>
+                        <option value="ai-nlp" data-en="AI/NLP Integration" data-nl="AI/NLP Integratie">AI/NLP Integration</option>
+                        <option value="other" data-en="Other - Please specify in message" data-nl="Anders - Specificeer in bericht">Other - Please specify in message</option>
                     </select>
                 </div>
                 
                 <div class="form-group">
-                    <label for="message">Project Details</label>
-                    <textarea id="message" name="message" placeholder="Please describe your project requirements, timeline, and any specific challenges you're facing..." required></textarea>
+                    <label for="message" data-en="Project Details" data-nl="Project Details">Project Details</label>
+                    <textarea id="message" name="message" data-en="Please describe your project requirements, timeline, and any specific challenges you're facing..." data-nl="Beschrijf uw projectvereisten, tijdlijn en eventuele specifieke uitdagingen..." placeholder="Please describe your project requirements, timeline, and any specific challenges you're facing..." required></textarea>
                 </div>
                 
-                <button type="submit" class="submit-btn">Send Message</button>
+                <button type="submit" class="submit-btn" data-en="Send Message" data-nl="Verstuur Bericht">Send Message</button>
             </form>
         </div>
     </section>
@@ -276,130 +225,7 @@
         </div>
     </footer>
 
-    <script>
-        // Language switching functionality
-        let currentLanguage = 'en';
-        
-        const translations = {
-            en: {
-                'services-title': 'Specialized Services',
-                'about-title': 'About',
-                'experience-title': 'Recent Projects',
-                'contact-title': 'Get In Touch',
-                'form-success': 'Thank you for your inquiry! I will respond within 24 hours to discuss your municipal technology project.',
-                'dutch-municipal': 'Dutch Municipal',
-                'nederlandse-gemeentelijke': 'Nederlandse Gemeentelijke'
-            },
-            nl: {
-                'services-title': 'Gespecialiseerde Diensten',
-                'about-title': 'Over Mij',
-                'experience-title': 'Recente Projecten',
-                'contact-title': 'Neem Contact Op',
-                'form-success': 'Bedankt voor uw aanvraag! Ik zal binnen 24 uur reageren om uw gemeentelijke technologie project te bespreken.',
-                'dutch-municipal': 'Nederlandse Gemeentelijke',
-                'nederlandse-gemeentelijke': 'Nederlandse Gemeentelijke'
-            }
-        };
+    <script src="script.js"></script>
 
-        function switchLanguage(lang) {
-            currentLanguage = lang;
-            
-            // Update active button
-            document.getElementById('en-btn').classList.toggle('active', lang === 'en');
-            document.getElementById('nl-btn').classList.toggle('active', lang === 'nl');
-            
-            // Update all elements with data attributes
-            document.querySelectorAll('[data-en][data-nl]').forEach(element => {
-                const content = lang === 'en' ? element.getAttribute('data-en') : element.getAttribute('data-nl');
-                if (element.tagName === 'INPUT' && element.type !== 'email' && element.type !== 'tel') {
-                    element.placeholder = content;
-                } else if (element.tagName === 'TEXTAREA') {
-                    element.placeholder = content;
-                } else if (element.tagName === 'OPTION') {
-                    element.textContent = content;
-                } else {
-                    element.innerHTML = content;
-                }
-            });
-            
-            // Update section titles
-            Object.keys(translations[lang]).forEach(key => {
-                const element = document.getElementById(key);
-                if (element) {
-                    element.textContent = translations[lang][key];
-                }
-            });
-            
-            // Update hero title highlight
-            const heroTitle = document.querySelector('.hero-content h1');
-            if (heroTitle) {
-                const highlightClass = lang === 'en' ? 'Dutch Municipal' : 'Nederlandse Gemeentelijke';
-                heroTitle.innerHTML = `<span class="highlight">${highlightClass}</span> ${lang === 'en' ? 'Architecture Solutions' : 'Architectuur Oplossingen'}`;
-            }
-        }
-
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // Form submission handler
-        function handleSubmit(event) {
-            event.preventDefault();
-            
-            // Get form data
-            const formData = new FormData(event.target);
-            const data = Object.fromEntries(formData);
-            
-            // Show success message in current language
-            const message = translations[currentLanguage]['form-success'];
-            alert(message);
-            
-            // Reset form
-            event.target.reset();
-        }
-
-        // Header scroll effect
-        window.addEventListener('scroll', function() {
-            const header = document.querySelector('header');
-            if (window.scrollY > 100) {
-                header.style.background = 'rgba(44, 62, 80, 0.95)';
-            } else {
-                header.style.background = 'linear-gradient(135deg, #2c3e50 0%, #34495e 100%)';
-            }
-        });
-
-        // Animate timeline items on scroll
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver(function(entries) {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
-
-        // Observe all timeline items and service cards
-        document.querySelectorAll('.timeline-item, .service-card').forEach(item => {
-            item.style.opacity = '0';
-            item.style.transform = 'translateY(20px)';
-            item.style.transition = 'all 0.6s ease';
-            observer.observe(item);
-        });
-    </script>
 </body>
 </html>
