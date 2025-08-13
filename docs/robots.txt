@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ugo-enterprise-architecture.github.io/ugo-enterprise-architecture/sitemap.xml
