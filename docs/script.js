@@ -73,22 +73,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Form submission handler
-function handleSubmit(event) {
-    event.preventDefault();
-    
-    // Get form data
-    const formData = new FormData(event.target);
-    const data = Object.fromEntries(formData);
-    
-    // Show success message in current language
-    const message = translations[currentLanguage]['form-success'];
-    alert(message);
-    
-    // Reset form
-    event.target.reset();
-}
-
 // Header scroll effect
 window.addEventListener('scroll', function() {
     const header = document.querySelector('header');

@@ -146,7 +146,7 @@
     <section id="contact" class="section section-alt">
         <div class="container">
             <h2 id="contact-title">Get In Touch</h2>
-            <form class="contact-form" onsubmit="handleSubmit(event)">
+            <form class="contact-form" action="https://formspree.io/f/xovlrzlg" method="POST">
                 <div class="form-group">
                     <label for="name" data-en="Name" data-nl="Naam">Name</label>
                     <input type="text" id="name" name="name" required>
@@ -190,7 +190,9 @@
                     <label for="message" data-en="Project Details" data-nl="Project Details">Project Details</label>
                     <textarea id="message" name="message" data-en="Please describe your project requirements, timeline, and any specific challenges you're facing..." data-nl="Beschrijf uw projectvereisten, tijdlijn en eventuele specifieke uitdagingen..." placeholder="Please describe your project requirements, timeline, and any specific challenges you're facing..." required></textarea>
                 </div>
-                
+
+                <input type="hidden" name="_subject" value="New contact from Ugo Software website">
+                <input type="hidden" name="_next" value="https://ugo-enterprise-architecture.github.io/ugo-enterprise-architecture?success=true">                
                 <button type="submit" class="submit-btn" data-en="Send Message" data-nl="Verstuur Bericht">Send Message</button>
             </form>
         </div>
