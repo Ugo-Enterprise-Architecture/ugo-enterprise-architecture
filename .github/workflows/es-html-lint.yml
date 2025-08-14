@@ -1,4 +1,4 @@
-name: HTML Lint
+name: Linters
 
 on:
   push:
