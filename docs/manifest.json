@@ -1,0 +1,22 @@
+{
+  "name": "Ugo Enterprise Architecture",
+  "short_name": "Ugo EA",
+  "description": "Dutch government enterprise architecture consulting by Hugo ter Doest.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#003377",
+  "lang": "nl",
+  "icons": [
+    {
+      "src": "/icons/ugo-enterprise-architecture-192-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/ugo-enterprise-architecture-512-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
