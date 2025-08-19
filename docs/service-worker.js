@@ -1,11 +1,11 @@
 const CACHE_NAME = 'ugo-ea-site-v1';
 const urlsToCache = [
-  '/',
-  '/index.html',
-  '/styles.css',
-  '/script.js',
-  '/manifest.json',
-  '/Hugo-ter-Doest.webp',
+  './',
+  './index.html',
+  './styles.css',
+  './script.js',
+  './manifest.json',
+  './Hugo-ter-Doest.webp',
   // Add any other important assets
 ];
 
