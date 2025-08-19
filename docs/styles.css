@@ -4,6 +4,30 @@
     box-sizing: border-box;
 }
 
+/* Hamburger menu styles */
+.menu-icon {
+  width: 32px;
+  height: 32px;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1001;
+}
+.menu-icon span {
+  height: 4px;
+  background: #fff;
+  margin: 5px 0;
+  border-radius: 2px;
+  display: block;
+  transition: 0.3s;
+}
+@media (max-width: 768px) {
+  .menu-icon { display: flex; }
+  nav { display: none; }
+  nav.active { display: block; }
+}
+
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;

@@ -117,3 +117,23 @@ document.querySelectorAll('.timeline-item, .service-card').forEach(item => {
     item.style.transition = 'all 0.6s ease';
     observer.observe(item);
 });
+
+// Mobile menu toggle
+document.addEventListener('DOMContentLoaded', function() {
+  const menuIcon = document.getElementById('menu-icon');
+  const nav = document.querySelector('nav');
+  if (menuIcon && nav) {
+    menuIcon.addEventListener('click', function() {
+      nav.classList.toggle('active');
+      menuIcon.classList.toggle('open');
+    });
+    // Optional: close menu when a nav link is clicked
+    nav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        nav.classList.remove('active');
+        menuIcon.classList.remove('open');
+      });
+    });
+  }
+});
+
