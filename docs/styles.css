@@ -26,16 +26,23 @@
 
 @media (max-width: 768px) {
   .menu-icon { display: flex; }
-  .nav-links { display: none; }
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 60px; /* adjust if your header is taller */
+    right: 0;
+    background: #2c3e50;
+    flex-direction: column;
+    width: 40vw;         /* reduced from 70vw */
+    max-width:180px;    /* reduced from 320px */
+    box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+    z-index: 1000;
+    padding: 2rem 1rem;
+    border-radius: 0 0 0 16px;
+    align-items: flex-end;
+  }
   nav.active .nav-links {
     display: flex;
-    flex-direction: column;
-    background: #2c3e50;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    width: 100%;
-    z-index: 1000;
   }
 }
 
