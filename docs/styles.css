@@ -14,18 +14,29 @@
   cursor: pointer;
   z-index: 1001;
 }
+
 .menu-icon span {
   height: 4px;
-  background: #fff;
+  background: #3498db; /* Make sure it's visible */
   margin: 5px 0;
   border-radius: 2px;
   display: block;
   transition: 0.3s;
 }
+
 @media (max-width: 768px) {
   .menu-icon { display: flex; }
-  nav { display: none; }
-  nav.active { display: block; }
+  .nav-links { display: none; }
+  nav.active .nav-links {
+    display: flex;
+    flex-direction: column;
+    background: #2c3e50;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+  }
 }
 
 body {
